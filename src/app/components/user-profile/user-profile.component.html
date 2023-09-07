@@ -1,0 +1,56 @@
+<body>
+    <header>
+        <h2 class="logo">WEBSTER</h2>
+        <nav class="navigation">                            
+            <a href="#">Info</a>
+            <a href="#">Tips</a>
+            <a href="#">Forum</a>
+            <a href="#">Blog</a>
+            <a href="#">Settings</a>            
+            <button type="button" class="btnLogout-popup" (click)="logOut()">Log out</button>
+        </nav>    
+    </header>          
+        <div class="text-center">
+                <h1>Welcome</h1>
+                <p>{{dataUser?.email}}</p>
+                <h3>Are you ready to master your coding skills? <br><br> Let's go! </h3>
+        </div>   
+        <div class="popup">
+            <div class="contentBox">
+                <div class="close"></div>
+                <div class="botImg">
+                    
+                </div>
+                <div class="content">
+                    <div>
+                        <h6>Hi there, if you need help with the contents <a routerLink="/user-profile">click here</a></h6>
+                    </div>                    
+                </div>
+            </div>
+        </div>         
+    <footer>  
+        <ul class="navbar">        
+            <li><a routerLink="/chat">ChatBot</a></li>            
+            <li><a routerLink="/metrics">Metrics</a></li>  
+        </ul>         
+    </footer>  
+    <script>
+        const popup = document.querySelector('.popup');
+        const close = document.querySelector('.close');
+
+        window.onload = function(){
+            setTimeout(function(){
+                popup.style.display = "block"
+            },5000)
+        }
+
+        close.addEventListener('click', ()=> {
+            popup.style.display = "none"
+        })
+    </script>       
+</body>
+
+
+
+
+

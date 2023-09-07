@@ -1,0 +1,235 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Orbitron', sans-serif;
+    background-color: #11354d;
+    display: flex;    
+    flex-direction: column-reverse;
+    align-items:center;
+    justify-content: center;   
+    min-height: 100vh;
+}
+
+.text errorLabel {
+    margin-left: 60px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    height: 100vh;
+}
+
+
+.popup {
+    position: absolute;
+    top: 115px;
+    transform: translate(95%, 0);
+    z-index: 999;  
+    display: none
+    ;
+}
+
+.contentBox {
+    position: relative;
+    width: 320px;
+    height: 130px;
+    background: transparent;
+    border: 3px solid rgba(255, 255, 255, .5);
+    border-radius: 10px;
+    backdrop-filter: blur(40px);
+    box-shadow:  0 0 80px rgba(0, 0, 0, .5);
+    display: flex;
+    
+}
+
+.contentBox .botImg {
+    position: relative;
+    width: 185px;
+    height: 125px;
+    margin: 20px 0 0 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(src\assets\img\bot_image.png);  
+    background-repeat: no-repeat;
+}
+
+.contentBox .botImg::before{
+    content: '';
+    position: absolute;
+    width: 50px;
+    height: 50px;  
+    
+}
+
+.contentBox .botImg img {
+    position: relative;
+    max-width: 450px;
+    z-index: 1;
+}
+
+.contentBox content {
+    position: relative;
+    width: 270px;
+    height: 125px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content {
+    color: #fff;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    width: 20px;
+    height: 20px;
+    background: url(src\assets\img\cancel.png);
+    background-repeat: no-repeat;
+    background-size: 10px;
+    background-position: center;
+    cursor: pointer;
+    z-index: 10;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 99;    
+}
+
+footer {
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    right: 0;
+    z-index: 1000;
+    background: transparent;
+    padding: 30px 13%;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+   
+    
+}
+
+.logo {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #fff;
+}
+
+.navigation {
+    display: flex;
+    align-items: center;
+}
+
+.navigation a {
+    position: relative;
+    color: #fff;
+    font-size: 1.1em;
+    text-decoration: none;
+    font-weight: 300;
+    margin-left: 45px;
+}
+
+.navigation a::after{
+    position: absolute;
+    content: '';
+    right: 0;
+    bottom: -4px;
+    width: 0;
+    height: 2px;
+    background: #fff;
+    border-radius: 8px;
+    transition: all ease .45s;
+}
+
+.navigation a:hover::after{
+    width: 100%;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+}
+
+.navbar a {
+    position: relative;
+    margin-right: 2em;
+    color: #fff;
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: 300;
+    margin-left: 45px;
+    
+}
+
+.navbar a::after{
+    position: absolute;
+    content: '';
+    right: 0;
+    bottom: -4px;
+    width: 0;
+    height: 2px;
+    background: #fff;
+    border-radius: 8px;
+    transition: all ease .45s;
+}
+
+.navbar a:hover::after{
+    width: 100%;
+}
+
+.btnLogout-popup{
+    display: inline-block;
+    padding: 8px 32px;
+    background: transparent;
+    color: #fff;
+    border: 2px solid #fff;
+    border-radius: 8px;
+    font-size: 17px;
+    font-weight: 400;
+    margin-left: 45px;
+    cursor: pointer;
+    transition: all ease .45s;
+}
+
+.btnLogout-popup:hover{
+    transform: scale(1.1);
+    background: #fff;
+    border: 2px solid #fff;
+    color: #162928;
+}
+
+.text-center {
+    color:#fff;
+    font-size: 1.8rem;
+    
+}
+
+.text-center p {
+    color:yellow;
+   font-size: 1.8rem;
+    
+}
+
+ul {
+    list-style-type: none;
+  }

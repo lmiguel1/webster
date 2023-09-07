@@ -1,0 +1,34 @@
+<body>
+    <header>
+        <h2 class="logo" routerLink="main-page">WEBSTER</h2>        
+    </header>
+    <div class="wrapper">
+        <div class="form-box get-started">
+            <h2>Registration</h2>                
+                <form (ngSubmit)="register()" [formGroup]="userRegister">
+                    <div class="input-box">
+                        <span class="icon"><i class='bx bxs-envelope'></i></span>
+                        <input type="email" formControlName="email">
+                        <label>Email</label>                        
+                    </div>
+                    <div class="input-box">
+                        <span class="icon"><i class='bx bxs-lock-alt'></i></span>
+                        <input type="password" formControlName="password">
+                        <label>Password</label>                        
+                    </div>
+                    <div class="input-box">
+                        <span class="icon"><i class='bx bxs-lock-alt'></i></span>
+                        <input type="password" formControlName="confirmPassword">
+                        <label>Confirm Password</label>                        
+                    </div>
+                    <div class="check">
+                        <label><input type="checkbox" required>I accept all terms & conditions</label>                    
+                    </div>
+                    <button type="submit" class="main-btn" >Register Now</button>
+                    <div class="register">
+                        <p>Already have an account<a class="login-link" routerLink="/login"> Login!</a></p>
+                    </div>
+                </form>
+        </div>
+    </div>    
+</body>
