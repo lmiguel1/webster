@@ -18,13 +18,13 @@ export class UserProfileComponent implements OnInit {
         this.dataUser = user;
         this.showPopupAfterDelay();
       } else {
-        this.router.navigate(['/login']);
+        this.router.navigate(['/select-profile']);
       }
     });
   }
 
   logOut() {
-    this.afAuth.signOut().then(() => this.router.navigate(['/login']));
+    this.afAuth.signOut().then(() => this.router.navigate(['/select-profile']));
   }
 
   private showPopupAfterDelay() {

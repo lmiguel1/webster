@@ -10,6 +10,7 @@ import { ChatComponent } from './components/chat/chat.component';
 import { MetricsComponent } from './components/metrics/metrics.component';
 import { HintsComponent } from './components/hints/hints.component';
 import { VerifyEmailComponent } from './components/verify-email/verify-email.component';
+import { SelectProfileComponent } from './components/select-profile/select-profile.component';
 
 
 const routes: Routes = [
@@ -24,6 +25,7 @@ const routes: Routes = [
   { path: 'metrics', component: MetricsComponent},
   { path: 'hints', component: HintsComponent},
   { path: 'verify-email', component: VerifyEmailComponent},
+  { path: 'select-profile', component: SelectProfileComponent},
   { path: '**', redirectTo: 'main-page', pathMatch: 'full'}
   
   

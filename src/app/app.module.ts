@@ -18,6 +18,7 @@ import { MetricsComponent } from './components/metrics/metrics.component';
 import { HintsComponent } from './components/hints/hints.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { VerifyEmailComponent } from './components/verify-email/verify-email.component';
+import { SelectProfileComponent } from './components/select-profile/select-profile.component';
 
 
 @NgModule({
@@ -33,6 +34,7 @@ import { VerifyEmailComponent } from './components/verify-email/verify-email.com
     RegisterComponent,
     HintsComponent,
     VerifyEmailComponent,
+    SelectProfileComponent,
   ],
   imports: [
     BrowserModule,

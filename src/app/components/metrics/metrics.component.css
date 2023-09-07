@@ -21,12 +21,7 @@ h1 {
     height: 100vh;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;   
-}
-
-button {
-    color: #fff ;
-    cursor: pointer;
+    justify-content:space-evenly;   
 }
 
 .logo {
@@ -57,66 +52,16 @@ button {
     background-image: url(src\assets\img\metrics.jpg);
 }
 
-.info {
-    color: rgba(255, 255, 255, 0.5);
-    font-size: 11px;
-    padding: 10px;
-}
-
-input {
-    border: none;
-    background-color: rgba(255, 255, 255, 0.5);
-    width: 100%;
-    font-size: 20px;
-    padding: 12px 15px;
-    border-radius: 5px;
-    box-shadow: rgba(0, 0, 0, 0.05) 0 54px 55px,
-    rgba(0, 0, 0, 0.05) 0 -12px 30px,
-    rgba(0, 0, 0, 0.05) 0 4px 6px,
-    rgba(0, 0, 0, 0.05) 0 12px 3px,
-    rgba(0, 0, 0, 0.05) 0 -3px 5px    
-}
-
-input:focus {
-    outline: none;
-}
-
-.input-container {
-    position: relative;
-    width: 100%;
-    max-width: 650px;
-}
-
-.input-container #submit {
-    position: absolute;
-    right: 20px;
-    bottom: 15px;
-    cursor: pointer;
-}
-
-button {
-    border: solid 0.5px rgba(255, 255, 255, 0.5);
-    background-color: transparent;
-    border-radius: 5px;
-    padding: 10px;
-    margin: 10px;
-}
-
-nav {
-    border-top: solid 0.5px rgba(255, 255, 255, 0.5);
-    padding: 10px;
-    margin: 10px;
-}
-
-.params {
-    padding: 60px 10px 10px 10px;
+.params, .skills {
+    padding: 20px 10px 10px 10px;
     margin: 10px;
     display: flex;
     flex-direction: column;
     height: 100%;
 }
 
-.params p {
+.params, .skills p {
+    margin-bottom: 0.5px;
     cursor: pointer;
 }
 
